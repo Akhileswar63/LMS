@@ -1,0 +1,367 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.dashbord_sidebar{
+    position: relative;
+    width: 22%;
+    left: 0;
+    height: 100%;
+    background-color: black;
+    float: left;
+
+
+}
+
+
+.dashbord_sidebar al{
+    background: #1e1e1e;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    position: relative;
+    height: auto;
+ 
+}
+.dashbord_sidebar al li{
+    line-height: 60px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+.dashbord_sidebar al li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+.dashbord_sidebar al li a:hover{
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+    width: auto;
+  
+}
+.dashbord_sidebar al al {
+position: static;
+display: none;
+}
+.dashbord_sidebar al .feat-show.show {
+    display: block;
+
+}
+.dashbord_sidebar al al li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+.dashbord_sidebar al al li a{
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 40px;
+    
+}
+.dashbord_sidebar al li a span {
+position: absolute;
+top: 50%;
+right: 20%;
+transform: translateY(-50%);
+font-size: 22px;
+transition: transform 0.4s;
+}
+.dashbord_sidebar al li a:hover span{
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.dashbord_navbar1 {
+  background-color: #042331;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+/* Style the symbol */
+.symbol {
+  font-size: 14px;
+  margin-left: 1px;
+}
+.dashbord_navbar__logo1 img {
+  height: 45%;
+  margin-right: 10px;
+  margin-top: 10px;
+
+}
+.dashbord_navbar__logo1 span{
+  font-size: 28px;
+}
+.dashbord_time{
+    font-size: 20px;
+    margin-right: -1300px;
+    padding: 30px 10px;
+    margin-top: -30px;
+    margin-left: -700px;
+
+ 
+}
+.dashbord_main-cards {
+  display: flex;
+
+  gap: 18px;
+  margin: 15px 0;
+  width: 1200px;
+  
+  margin-bottom: 30px;
+}
+.dashbord_card{
+  margin-left: 10px;
+  display:flex ;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.dashbord_card:first-child{
+  background-color: aqua;
+  width: 130px;
+}
+.dashbord_card:nth-child(2){
+  background-color: rgb(0, 255, 38);
+  width: 130px;
+
+}
+.dashbord_card:nth-child(3){
+  background-color: rgb(255, 234, 0);
+  width: 130px;
+
+}
+.dashbord_card:nth-child(4){
+  background-color: rgb(255, 0, 0);
+  width: 130px;
+
+}
+.dashbord_card:nth-child(5){
+  background-color: rgb(76, 0, 255);
+  width: 130px;
+
+}
+.dashbord_card-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashbord_graphs{
+ width: 78%;
+ float: right;
+
+}
+.dashbord_Btn {
+  --black: #000000;
+  --ch-black: #141414;
+  --eer-black: #1b1b1b;
+  --night-rider: #2e2e2e;
+  --white: #ffffff;
+  --af-white: #f3f3f3;
+  --ch-white: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.199);
+  background-color: var(--night-rider);
+  margin-top: 36px;
+  margin-left: 800px;
+
+}
+
+/* plus sign */
+.dashbord_sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashbord_sign svg {
+  width: 17px;
+}
+
+.dashbord_sign svg path {
+  fill: var(--af-white);
+}
+/* text */
+.dashbord_text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: var(--af-white);
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.dashbord_Btn:hover {
+  width: 125px;
+  border-radius: 5px;
+  transition-duration: .3s;
+}
+
+.dashbord_Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.dashbord_Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.dashbord_Btn:active {
+  transform: translate(2px ,2px);
+}
+/*------ Settings ------*/
+.dashbord_container {
+  --color: #a5a5b0;
+  --size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--size);
+  user-select: none;
+  fill: var(--color);
+  margin-right: -1900px;
+  margin-top: 32px;
+}
+
+.dashbord_container .bell-regular {
+  position: absolute;
+  animation: keyframes-fill .5s;
+}
+
+.dashbord_container .bell-solid {
+  position: absolute;
+  display: none;
+  animation: keyframes-fill .5s;
+}
+
+/* ------ On check event ------ */
+.dashbord_container input:checked ~ .bell-regular {
+  display: none;
+}
+
+.dashbord_container input:checked ~ .bell-solid {
+  display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.dashbord_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Mobile First Styles */
+@media only screen and (max-width: 768px) {
+  .dashbord_sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  .dashbord_navbar__logo1 span{
+    font-size: 20px;
+  }
+
+
+  .dashbord_sidebar ul {
+    padding: 10px;
+  }
+
+  .dashbord_sidebar ul li {
+    line-height: 30px;
+  }
+
+  .dashbord_sidebar ul li a {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  .dashbord_navbar1 {
+    height: auto;
+    padding: 5px;
+  }
+
+  .dashbord_navbar__logo1 img {
+    height: 30px;
+    margin-top: 5px;
+  }
+
+  .dashbord_time {
+    display: none;
+  }
+
+  .dashbord_main-cards {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .dashbord_card {
+    width: calc(50% - 10px);
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+
+  .dashbord_Btn {
+    margin-left:1900px;
+    margin-top: 5px;
+  }
+  .dashbord_graphs{
+    margin-left: 30px;
+  }
+ 
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .dashbord_sidebar {
+    width: 100px;
+  }
+
+  .dashbord_navbar1 {
+    height: 70px;
+  }
+
+  .dashbord_navbar__logo1 img {
+    height: 40px;
+  }
+
+  .dashbord_time {
+    display: block;
+  }
+
+  .dashbord_Btn {
+    margin-left: 500px;
+  }
+}
