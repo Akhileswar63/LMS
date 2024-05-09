@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './AddTask.css'; 
 
 const AddTask = () => {
-  const [refFilefile, setFile] = useState(null);
+  const [refFile, setFile] = useState(null);
   const [taskName, setTaskName] = useState('');
   const [taskDescription, setTaskDescription] = useState('');
   const [startDate, setStartDate] = useState('');
