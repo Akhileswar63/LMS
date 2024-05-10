@@ -40,7 +40,7 @@ function AddTopic() {
         });
 
         try {
-            const response = await axios.post(`http://localhost:8088/api-video/add`, formDataToSend, {
+            const response = await axios.post(`http://localhost:8080/api/employees/add`, formDataToSend, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
